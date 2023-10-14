@@ -1,0 +1,18 @@
+// Variables
+$font-family:'Dosis', sans-serif; 
+$website-width: 1280px; 
+$main-color: #e7bf96;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$bg-image1: url('../img/showcaseBig.jpg');
+$bg-about: url('../img/bigPhoto2.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50 ) {
+    @return $dark-color;
+  } @else {
+    @return #fff;
+  }
+}
